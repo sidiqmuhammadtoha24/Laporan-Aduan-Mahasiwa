@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Ringkasan — Administrator UT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%2300529B%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<header class="appbar appbar-wide">
+  <div class="appbar-in">
+    <a class="brand" href="beranda.html">
+      <span class="mark">UT</span>
+      <span class="brand-name">Administrator</span>
+    </a>
+    <nav class="tabs">
+      <a href="beranda.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.8 9.6V20h12.4V9.6"/></svg><span class="tab-label">Ringkasan</span></a>
+      <a href="laporan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h7.5L18 7.5V21H6z"/><path d="M13.3 3.2V8H18"/><path d="M9 13h6M9 17h4"/></svg><span class="tab-label">Antrean</span></a>
+      <a href="pesan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11.5H9.5L4 20.5z"/></svg><span class="tab-label">Pesan</span></a>
+      <a href="akun.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.9-3.4 3.6-5.2 7-5.2s6.1 1.8 7 5.2"/></svg><span class="tab-label">Akun</span></a>
+    </nav>
+    <a href="akun.html" class="avatar" aria-label="Akun">RP</a>
+  </div>
+</header>
+
+<main class="page page-wide">
+
+  <div style="padding:28px 0 24px">
+    <h1>Ringkasan</h1>
+    <p class="muted small" style="margin-top:6px">Senin, 22 September 2026</p>
+  </div>
+
+  <div class="figures" style="padding-bottom:26px;border-bottom:1px solid var(--line)">
+    <div><div class="figure-n hi">7</div><div class="figure-l">Menunggu verifikasi</div></div>
+    <div><div class="figure-n">11</div><div class="figure-l">Sedang diproses</div></div>
+    <div><div class="figure-n" style="color:var(--stop)">2</div><div class="figure-l">Lewat tenggat</div></div>
+    <div><div class="figure-n">14</div><div class="figure-l">Selesai pekan ini</div></div>
+  </div>
+
+  <section class="section">
+    <div class="between" style="margin-bottom:6px">
+      <div class="section-title" style="margin:0">Perlu tindakan hari ini</div>
+      <a class="small" href="laporan.html">Antrean penuh</a>
+    </div>
+
+    <ul class="list">
+      <li><a class="item" href="detail.html">
+        <div class="item-top"><span class="item-id">AD-2026-0427</span><span class="status verifikasi">Menunggu verifikasi</span></div>
+        <div class="item-title">Tutor tidak membuka inisiasi sesi 4</div>
+        <div class="item-meta">Bayu Saputra &middot; EKMA4214 &middot; masuk 2 jam lalu</div>
+      </a></li>
+      <li><a class="item" href="detail.html">
+        <div class="item-top"><span class="item-id">AD-2026-0425</span><span class="status verifikasi">Menunggu verifikasi</span></div>
+        <div class="item-title">Nilai diskusi sesi 1-3 kosong satu kelas</div>
+        <div class="item-meta">Nurul Hidayah &middot; ESPA4110 &middot; masuk 6 jam lalu</div>
+      </a></li>
+      <li><a class="item" href="detail.html">
+        <div class="item-top"><span class="item-id">AD-2026-0396</span><span class="status ditolak">Lewat tenggat</span></div>
+        <div class="item-title">Tuweb dibatalkan sepihak tanpa pengganti</div>
+        <div class="item-meta">Gilang Pratama &middot; EKSI4202 &middot; 14 hari berjalan</div>
+      </a></li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Laporan menumpuk di kelas yang sama</div>
+    <ul class="list">
+      <li><a class="item" href="laporan.html">
+        <div class="item-title">EKMA4116 - Manajemen &middot; Kelas Tuton 02</div>
+        <div class="item-meta">6 laporan serupa dalam 12 hari terakhir</div>
+      </a></li>
+      <li><a class="item" href="laporan.html">
+        <div class="item-title">ESPA4110 - Pengantar Ekonomi Makro &middot; Kelas Tuton 02</div>
+        <div class="item-meta">4 laporan serupa dalam 8 hari terakhir</div>
+      </a></li>
+    </ul>
+  </section>
+
+</main>
+</body>
+</html>

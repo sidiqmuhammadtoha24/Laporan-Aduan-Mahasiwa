@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Rani Puspita — Aduan Mahasiswa UT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%2300529B%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<header class="appbar">
+  <div class="appbar-in">
+    <a class="back" href="pesan.html">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      Pesan
+    </a>
+    <span class="spacer"></span>
+    <nav class="tabs">
+      <a href="beranda.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.8 9.6V20h12.4V9.6"/></svg><span class="tab-label">Beranda</span></a>
+      <a href="laporan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h7.5L18 7.5V21H6z"/><path d="M13.3 3.2V8H18"/><path d="M9 13h6M9 17h4"/></svg><span class="tab-label">Laporan</span></a>
+      <a href="lapor.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 8.5v7M8.5 12h7"/></svg><span class="tab-label">Lapor</span></a>
+      <a href="pesan.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11.5H9.5L4 20.5z"/></svg><span class="tab-label">Pesan</span></a>
+      <a href="profil.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.9-3.4 3.6-5.2 7-5.2s6.1 1.8 7 5.2"/></svg><span class="tab-label">Profil</span></a>
+    </nav>
+    <a href="profil.html" class="avatar" aria-label="Profil">AR</a>
+  </div>
+</header>
+
+<main class="page" style="padding-bottom:0">
+
+  <div style="padding:18px 0 12px;border-bottom:1px solid var(--line)">
+    <div class="row">
+      <span class="avatar lg">RP</span>
+      <div style="min-width:0">
+        <div class="strong">Rani Puspita</div>
+        <div class="tiny muted">Administrator &middot; <a href="detail.html" class="mono">AD-2026-0418</a></div>
+      </div>
+      <span class="spacer"></span>
+      <span class="status proses"></span>
+    </div>
+  </div>
+
+  <div class="talk">
+    <span class="day">12 SEPTEMBER</span>
+
+    <div class="msg">
+      <div class="who">Rani Puspita &middot; 14:10</div>
+      <div class="bubble">Halo Andira, laporan Anda sudah saya verifikasi. Apakah sesi 5 sempat terbuka sebentar lalu hilang, atau memang belum pernah muncul?</div>
+    </div>
+
+    <div class="msg me">
+      <div class="who">Anda &middot; 14:33</div>
+      <div class="bubble">Belum pernah muncul sama sekali, Bu. Sampai sekarang kolom sesi 5 masih kosong.</div>
+    </div>
+
+    <span class="day">15 SEPTEMBER</span>
+
+    <div class="msg sys"><div class="bubble">Status laporan berubah menjadi Diproses</div></div>
+
+    <div class="msg">
+      <div class="who">Rani Puspita &middot; 10:24</div>
+      <div class="bubble">Sudah saya teruskan ke koordinator tutor UPBJJ Bandung pagi ini. Mereka berjanji menjawab paling lambat Kamis, 18 September.</div>
+    </div>
+  </div>
+
+  <div class="composer">
+    <textarea class="textarea" rows="1" placeholder="Tulis pesan"></textarea>
+    <button class="icon-btn" type="button" aria-label="Kirim">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l16-7-7 16-2.5-6.5z"/></svg>
+    </button>
+  </div>
+</main>
+</body>
+</html>

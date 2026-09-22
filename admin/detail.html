@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>AD-2026-0418 — Administrator UT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%2300529B%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+
+<header class="appbar appbar-wide">
+  <div class="appbar-in">
+    <a class="back" href="laporan.html">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      Antrean
+    </a>
+    <span class="spacer"></span>
+    <nav class="tabs">
+      <a href="beranda.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.8 9.6V20h12.4V9.6"/></svg><span class="tab-label">Ringkasan</span></a>
+      <a href="laporan.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h7.5L18 7.5V21H6z"/><path d="M13.3 3.2V8H18"/><path d="M9 13h6M9 17h4"/></svg><span class="tab-label">Antrean</span></a>
+      <a href="pesan.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11.5H9.5L4 20.5z"/></svg><span class="tab-label">Pesan</span></a>
+      <a href="akun.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M5 20c.9-3.4 3.6-5.2 7-5.2s6.1 1.8 7 5.2"/></svg><span class="tab-label">Akun</span></a>
+    </nav>
+    <a href="akun.html" class="avatar" aria-label="Akun">RP</a>
+  </div>
+</header>
+
+<main class="page page-wide">
+
+  <div style="padding:26px 0 20px">
+    <div class="between">
+      <span class="item-id">AD-2026-0418</span>
+      <span class="status proses">Diproses</span>
+    </div>
+    <h1 style="margin-top:10px">Tutor tidak merespons diskusi sesi 3-5</h1>
+    <p class="muted small" style="margin-top:8px">EKMA4116 &middot; Kelas Tuton 02 &middot; masuk 12 Sep 2026</p>
+    <div style="margin-top:18px">
+      <div class="progress"><span style="width:75%"></span></div>
+      <div class="progress-note">Tahap 3 dari 4 &middot; sisa tenggat 4 hari</div>
+    </div>
+  </div>
+
+  <div class="split">
+    <div>
+
+      <section class="section">
+        <div class="section-title">Tulis pembaruan</div>
+
+        <div class="field">
+          <span class="label">Pindahkan status ke</span>
+          <div class="chips">
+            <button class="chip" aria-pressed="false" type="button">Menunggu verifikasi</button>
+            <button class="chip" aria-pressed="true" type="button">Diproses</button>
+            <button class="chip" aria-pressed="false" type="button">Selesai</button>
+            <button class="chip" aria-pressed="false" type="button">Ditolak</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="upd">Catatan perkembangan <span class="req">*</span></label>
+          <textarea class="textarea" id="upd" placeholder="Apa yang sudah dikerjakan dan apa yang ditunggu. Kalimat ini dibaca mahasiswa."></textarea>
+        </div>
+
+        <div class="picks">
+          <label class="pick"><input type="checkbox" checked>
+            <span><span class="pick-t">Kirim pemberitahuan ke mahasiswa</span>
+            <span class="pick-d">Email dan penanda di halaman laporannya.</span></span></label>
+          <label class="pick"><input type="checkbox">
+            <span><span class="pick-t">Simpan sebagai catatan internal</span>
+            <span class="pick-d">Tidak muncul di riwayat mahasiswa.</span></span></label>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="button">Simpan pembaruan</button>
+          <button class="btn btn-quiet" type="button">Minta bukti tambahan</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Riwayat penanganan</div>
+        <ul class="trail">
+          <li class="now">
+            <div class="trail-time">15 Sep 2026 &middot; 10:22</div>
+            <div class="trail-title">Menunggu tanggapan koordinator</div>
+            <div class="trail-desc">Koordinator berjanji menjawab paling lambat 18 September.</div>
+            <div class="trail-by">Rani Puspita &middot; terlihat oleh mahasiswa</div>
+          </li>
+          <li class="done">
+            <div class="trail-time">13 Sep 2026 &middot; 08:20</div>
+            <div class="trail-title">Catatan internal</div>
+            <div class="trail-desc">Tutor yang sama muncul di AD-2026-0396.</div>
+            <div class="trail-by">Rani Puspita &middot; internal</div>
+          </li>
+          <li class="done">
+            <div class="trail-time">13 Sep 2026 &middot; 08:15</div>
+            <div class="trail-title">Diteruskan ke koordinator tutor UPBJJ Bandung</div>
+            <div class="trail-by">Rani Puspita &middot; terlihat oleh mahasiswa</div>
+          </li>
+          <li class="done">
+            <div class="trail-time">12 Sep 2026 &middot; 14:08</div>
+            <div class="trail-title">Diverifikasi</div>
+            <div class="trail-by">Rani Puspita &middot; terlihat oleh mahasiswa</div>
+          </li>
+          <li class="done">
+            <div class="trail-time">12 Sep 2026 &middot; 09:41</div>
+            <div class="trail-title">Laporan masuk</div>
+            <div class="trail-desc">Dikirim mahasiswa dengan 2 lampiran.</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Isi laporan</div>
+        <p class="small" style="color:var(--ink-2)">Saya mengirim jawaban diskusi sesi 3 pada 8 September dan sesi 4 pada 14 September. Sampai hari ini belum ada tanggapan maupun penilaian dari tutor. Inisiasi sesi 5 juga belum diunggah padahal jadwalnya sudah lewat tiga hari.</p>
+        <div style="margin-top:16px">
+          <div class="attach"><span class="attach-ic">PNG</span><span>diskusi-sesi-3.png</span><span class="spacer"></span><a class="small" href="#">Lihat</a></div>
+          <div class="attach"><span class="attach-ic">PNG</span><span>daftar-nilai.png</span><span class="spacer"></span><a class="small" href="#">Lihat</a></div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section class="section">
+        <div class="section-title">Pelapor</div>
+        <div class="row">
+          <span class="avatar lg">AR</span>
+          <div style="min-width:0">
+            <div class="strong">Andira Rahmawati</div>
+            <div class="tiny muted mono">041985372</div>
+          </div>
+        </div>
+        <dl class="kv" style="margin-top:14px">
+          <div><dt>Program studi</dt><dd>Akuntansi (S1)</dd></div>
+          <div><dt>UPBJJ</dt><dd>Jakarta</dd></div>
+          <div><dt>WhatsApp</dt><dd class="mono">0812 4471 9033</dd></div>
+          <div><dt>Riwayat</dt><dd>5 laporan</dd></div>
+        </dl>
+        <div class="actions">
+          <a class="btn btn-quiet btn-block" href="percakapan.html">Buka percakapan</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Penugasan</div>
+        <div class="field">
+          <label for="pj">Petugas</label>
+          <select class="select" id="pj">
+            <option selected>Rani Puspita (saya)</option>
+            <option>Dimas Aryo</option>
+            <option>Belum ditugaskan</option>
+          </select>
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label for="pr">Prioritas</label>
+          <select class="select" id="pr">
+            <option>Biasa</option>
+            <option selected>Perlu ditagih</option>
+            <option>Mendesak</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Laporan serupa</div>
+        <ul class="list">
+          <li><a class="item" href="detail.html" style="padding:12px 0">
+            <div class="item-id">AD-2026-0396</div>
+            <div class="item-title" style="font-size:14.5px">Tuweb dibatalkan sepihak</div>
+          </a></li>
+          <li><a class="item" href="detail.html" style="padding:12px 0">
+            <div class="item-id">AD-2026-0388</div>
+            <div class="item-title" style="font-size:14.5px">Salah penempatan kelas Tuton</div>
+          </a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</main>
+</body>
+</html>
