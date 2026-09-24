@@ -1,6 +1,6 @@
 /* ===========================================================
    Aduan Mahasiswa — Universitas Terbuka
-   Mockup statis. Putih + biru UT. Tanpa gradient, tanpa kotak.
+   Mockup statis. Putih + biru UT. Kartu dipakai untuk daftar laporan.
    Ditulis mobile dulu, lalu dilebarkan untuk layar besar.
    =========================================================== */
 
@@ -91,12 +91,7 @@ ul{margin:0;padding:0;list-style:none}
 
 .brand{display:flex;align-items:center;gap:9px;color:var(--ink);margin-right:auto}
 .brand:hover{text-decoration:none}
-.mark{
-  width:26px;height:26px;flex:none;border-radius:7px;
-  background:var(--blue);color:#fff;
-  font-size:11px;font-weight:700;letter-spacing:-.02em;
-  display:flex;align-items:center;justify-content:center;
-}
+.brand-logo{width:32px;height:32px;object-fit:contain;flex:none}
 .brand-name{font-size:15.5px;font-weight:700;letter-spacing:-.02em}
 
 .back{
@@ -182,6 +177,29 @@ ul{margin:0;padding:0;list-style:none}
 .item-title{font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin-top:5px}
 .item-meta{font-size:13px;color:var(--muted);margin-top:4px}
 .item-prog{margin-top:12px}
+
+/* kartu laporan */
+.report-cards{display:grid;gap:12px;padding-top:10px}
+.report-cards a.item{
+  padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff;
+  box-shadow:0 3px 14px rgba(16,21,27,.045);
+  transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease;
+}
+.report-cards li:last-child a.item{border-bottom:1px solid var(--line)}
+.report-cards a.item:hover{
+  border-color:var(--blue-line);box-shadow:0 7px 22px rgba(0,82,155,.09);
+  transform:translateY(-1px);
+}
+.report-cards a.item:focus-visible{outline-offset:3px}
+.report-cards .item-title{font-size:16px;margin-top:11px;line-height:1.4}
+.report-cards .item-meta{margin-top:6px}
+.report-cards .status{padding:4px 9px;border-radius:999px;background:var(--line-2);font-size:12px}
+.report-cards .status.proses,.report-cards .status.terkirim{background:var(--blue-soft)}
+.report-cards .status.verifikasi{background:#FBF4E6}
+.report-cards .status.selesai{background:#EAF7F0}
+.report-cards .status.ditolak{background:#FBEDEC}
+.report-cards .progress{height:5px;background:var(--blue-line)}
+.report-cards .progress-note{margin-top:8px;color:var(--muted)}
 
 /* ---------- ringkasan angka, tanpa kartu ---------- */
 .figures{display:flex;gap:28px;flex-wrap:wrap}
@@ -323,11 +341,7 @@ ul{margin:0;padding:0;list-style:none}
   justify-content:center;align-items:center;
   padding:40px 24px;text-align:center;
 }
-.gate-mark{
-  width:52px;height:52px;border-radius:14px;background:var(--blue);color:#fff;
-  display:flex;align-items:center;justify-content:center;
-  font-size:19px;font-weight:700;letter-spacing:-.02em;margin-bottom:22px;
-}
+.gate-logo{width:76px;height:84px;object-fit:contain;margin-bottom:22px}
 .gate h1{font-size:24px}
 .gate p{color:var(--muted);font-size:14.5px;margin-top:10px;max-width:34ch}
 .gate .btn{margin-top:30px;width:100%;max-width:330px}
@@ -378,6 +392,12 @@ table.tbl .t-sub{font-size:12.5px;color:var(--muted);margin-top:2px}
   .split{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start}
   .figures{gap:44px}
   .input,.select,.textarea{font-size:15px}
+  .report-cards-wide{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .report-cards-wide li,.report-cards-wide a.item{height:100%}
+}
+
+@media (min-width:1000px){
+  .report-cards-wide{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 
 @media (prefers-reduced-motion:reduce){
